@@ -157,49 +157,6 @@ footer {
   background: var(--parch-light);
 }
 
-/* ── Filtres pills actifs ── */
-.filtre-pill {
-  background: #2c1810;
-  color: #f5f0eb;
-  border-radius: 12px;
-  padding: 0.2rem 0.65rem;
-  font-size: 0.78rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.filtre-pill button {
-  background: none;
-  border: none;
-  color: #d4a96a;
-  cursor: pointer;
-  font-size: 0.85rem;
-  padding: 0;
-  line-height: 1;
-}
-.filtre-pill button:hover { color: #fff; }
-
-/* ── Carte badge union ── */
-.carte-badge.union {
-  background: #e8e0f0;
-  border-color: #6B006B;
-  color: #6B006B;
-}
-
-/* ── Filtres header collapsible ── */
-.filtres-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  background: #2c1810;
-  color: #f5f0eb;
-  cursor: pointer;
-  user-select: none;
-}
-.filtres-header .toggle-icon { transition: transform 0.2s; }
-.filtres-header.ouvert .toggle-icon { transform: rotate(180deg); }
-
 /* ── Type Individu carte-type ── */
 .type-Individu { background: #8b6914; color: #fff; }
 
@@ -241,11 +198,6 @@ footer {
   color: #d4a96a;
   border-color: #2c1810;
   font-family: monospace;
-}
-.carte-badge.maire {
-  background: #e8f0e8;
-  border-color: #2f4f2f;
-  color: #2f4f2f;
 }
 .carte-badge.decor {
   background: #fff8e1;

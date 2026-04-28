@@ -9,9 +9,7 @@
   if (!container) return;
 
   /* Calcul du chemin relatif vers nav.html selon la profondeur */
-  const depth = (window.location.pathname.match(/\//g) || []).length - 1;
-  const prefix = depth > 0 ? '../'.repeat(depth) : './';
-  const navPath = prefix + 'nav.html';
+  const navPath = '/genealogie-site/nav.html';
 
   fetch(navPath)
     .then(r => {
