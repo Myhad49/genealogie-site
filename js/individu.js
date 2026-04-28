@@ -66,7 +66,7 @@ async function chargerFiche() {
           <div class="info-label">Conjoint</div>
           <div class="info-val">
             ${conjoint
-              ? `<a href="/individu.html?id=${conjoint.personne_id}">
+              ? `<a href="/genealogie-site/individu.html?id=${conjoint.personne_id}">
                    ${conjoint.nom} ${conjoint.prenom}
                  </a>`
               : '—'}
@@ -76,7 +76,7 @@ async function chargerFiche() {
           <div class="info-label">Père</div>
           <div class="info-val">
             ${pere
-              ? `<a href="/individu.html?id=${pere.personne_id}">
+              ? `<a href="/genealogie-site/individu.html?id=${pere.personne_id}">
                    ${pere.nom} ${pere.prenom}
                  </a>`
               : '—'}
@@ -86,7 +86,7 @@ async function chargerFiche() {
           <div class="info-label">Mère</div>
           <div class="info-val">
             ${mere
-              ? `<a href="/individu.html?id=${mere.personne_id}">
+              ? `<a href="/genealogie-site/individu.html?id=${mere.personne_id}">
                    ${mere.nom} ${mere.prenom}
                  </a>`
               : '—'}
