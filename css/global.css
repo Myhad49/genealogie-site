@@ -1,0 +1,334 @@
+/* ================================================== */
+/* GLOBAL.CSS — Variables, reset, typographie, body  */
+/* ================================================== */
+
+/* ── Variables globales ── */
+:root {
+  --parch-bg:    #f5f0e1;
+  --parch-dark:  #2b1d0e;
+  --parch-mid:   #8b6914;
+  --parch-light: #e8dfc0;
+  --parch-line:  #c9b97a;
+  --section-bg:  #fdf8ec;
+  --text-main:   #3a2a10;
+  --text-soft:   #5c3d1a;
+  --radius:      6px;
+  --shadow:      0 2px 8px rgba(0,0,0,.12);
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--parch-bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── Liens ── */
+a {
+  color: var(--parch-mid);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Titres ── */
+h1, h2, h3, h4 {
+  font-family: 'Georgia', serif;
+  color: var(--parch-dark);
+  line-height: 1.3;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--parch-light); }
+::-webkit-scrollbar-thumb {
+  background: var(--parch-mid);
+  border-radius: 4px;
+}
+
+/* ── Page header — pages génération ── */
+.page-header {
+  background: #f5f0e1;
+  border-bottom: 2px solid var(--parch-line);
+  padding: 28px 40px 22px;
+}
+
+.page-header h1 {
+  font-size: 1.7rem;
+  color: #2b1d0e;
+  letter-spacing: .04em;
+}
+
+.page-header .breadcrumb {
+  font-size: .82rem;
+  color: #5c3d1a;
+  margin-top: 6px;
+  letter-spacing: .03em;
+}
+
+.page-header .breadcrumb a {
+  color: #775402;
+  text-decoration: none;
+}
+
+.page-header .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ── Badges type acte ── */
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 12px;
+  font-size: .75rem;
+  font-weight: bold;
+  letter-spacing: .03em;
+  white-space: nowrap;
+}
+
+.badge { color: #fff; }
+.badge-nm   { background: #003366; }   /* Naissance ♂  */
+.badge-nf   { background: #6B006B; }   /* Naissance ♀  */
+.badge-mar  { background: #775402; }   /* Mariage       */
+.badge-dec  { background: #444444; }   /* Décès         */
+.badge-mat  { background: #2f4f2f; }   /* Matricule     */
+.badge-rec  { background: #008080; }
+.badge-not  { background: #A0522D; }
+.badge-bapt { background: #003366; }   /* Baptême       */
+.badge-sep  { background: #444444; }   /* Sépulture     */
+
+/* ── Numéro Sosa ── */
+.sosa {
+  display: inline-block;
+  background: var(--parch-dark);
+  color: var(--parch-line);
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-size: .8rem;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: .04em;
+}
+
+/* ── Numéro ID ── */
+.id {
+  display: inline-block;
+  background: var(--parch-dark);
+  color: var(--parch-line);
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-size: .8rem;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: .04em;
+}
+
+/* ── Numéro collatéral ── */
+.collat {
+  display: inline-block;
+  background: #5c3d1a;
+  color: #f5e6c8;
+  border-radius: 4px;
+  padding: 1px 7px;
+  font-size: .78rem;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: .04em;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 18px;
+  font-size: .78rem;
+  color: var(--text-soft);
+  border-top: 1px solid var(--parch-line);
+  margin-top: 40px;
+  background: var(--parch-light);
+}
+
+/* ── Filtres pills actifs ── */
+.filtre-pill {
+  background: #2c1810;
+  color: #f5f0eb;
+  border-radius: 12px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.filtre-pill button {
+  background: none;
+  border: none;
+  color: #d4a96a;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  line-height: 1;
+}
+.filtre-pill button:hover { color: #fff; }
+
+/* ── Carte badge union ── */
+.carte-badge.union {
+  background: #e8e0f0;
+  border-color: #6B006B;
+  color: #6B006B;
+}
+
+/* ── Filtres header collapsible ── */
+.filtres-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #2c1810;
+  color: #f5f0eb;
+  cursor: pointer;
+  user-select: none;
+}
+.filtres-header .toggle-icon { transition: transform 0.2s; }
+.filtres-header.ouvert .toggle-icon { transform: rotate(180deg); }
+
+/* ── Type Individu carte-type ── */
+.type-Individu { background: #8b6914; color: #fff; }
+
+/* ── Onglet maires ── */
+.onglet[onclick*="maires"] { border-left: 3px solid #2f4f2f; }
+
+/* ══════════════════════════════════════════
+   RECHERCHE — Types d'actes (cartes)
+   ══════════════════════════════════════════ */
+.type-Naissance-M { background: #003366; color: #fff; }
+.type-Naissance-F { background: #6B006B; color: #fff; }
+.type-Naissance   { background: #003366; color: #fff; } /* fallback */
+.type-Mariage     { background: #775402; color: #fff; }
+.type-Décès       { background: #444444; color: #fff; }
+.type-Individu    { background: #8b6914; color: #fff; }
+.type-Matricule   { background: #2f4f2f; color: #fff; }
+.type-Recensement { background: #008080; color: #fff; }
+.type-Notarié     { background: #A0522D; color: #fff; }
+
+/* ── Cartes résultats ── */
+.carte-corps    { flex: 1; min-width: 0; }
+.carte-titre    { font-size: 1.05rem; font-weight: bold; margin: 0.3rem 0; }
+.carte-meta     { font-size: 0.85rem; color: #555; line-height: 1.6; }
+.carte-badges   { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+.sep            { color: #bbb; margin: 0 0.3rem; }
+
+.carte-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  background: #f0e8dc;
+  border: 1px solid #d4a96a;
+  color: #2c1810;
+  white-space: nowrap;
+}
+.carte-badge.sosa-b {
+  background: #2c1810;
+  color: #d4a96a;
+  border-color: #2c1810;
+  font-family: monospace;
+}
+.carte-badge.maire {
+  background: #e8f0e8;
+  border-color: #2f4f2f;
+  color: #2f4f2f;
+}
+.carte-badge.decor {
+  background: #fff8e1;
+  border-color: #f0b400;
+  color: #7a5c00;
+}
+.carte-badge.union {
+  background: #f3e8f8;
+  border-color: #6B006B;
+  color: #6B006B;
+}
+
+/* ── Filtres avancés (collapsible) ── */
+.filtres-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background: #2c1810;
+  color: #f5f0eb;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px 4px 0 0;
+}
+.filtres-header:hover    { background: #3d261a; }
+.filtres-header .toggle-icon { transition: transform 0.25s; }
+.filtres-header.ouvert .toggle-icon { transform: rotate(180deg); }
+
+.filtres-body {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #d4a96a;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.filtres-body.ouvert { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Pills filtres actifs */
+.filtres-actifs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  min-height: 0;
+}
+.filtre-pill {
+  background: #2c1810;
+  color: #f5f0eb;
+  border-radius: 12px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.filtre-pill button {
+  background: none;
+  border: none;
+  color: #d4a96a;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  line-height: 1;
+}
+.filtre-pill button:hover { color: #fff; }
+
+.carte-badge.maire {
+  background: #d4a96a;
+  color: #2c1810;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.carte-badge.officier {
+  background: #8b7355;
+  color: #f5f0eb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+}

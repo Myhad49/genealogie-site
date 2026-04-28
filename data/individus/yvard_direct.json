@@ -1,0 +1,46 @@
+[
+  {
+    "personne_id": "IND-Sosa_Y1",
+    "nom": "YVARD",
+    "prenoms": ["Sabrina", "Solange", "Cécile Noël"],
+    "sexe": "F",
+    "annee_naissance": 1987,
+    "mois_naissance": 6,
+    "jour_naissance": 20,
+    "lieu_naissance": "Beaupréau",
+    "lieu_naissance_aliase": ["Beaupréau", "Beaupréau-en-Mauges"],
+    "lieu_naissance_affiche": "Beaupréau-en-Mauges (Beaupréau)",
+    "dept_naissance": "Maine-et-Loire (49)",
+    "annee_deces": null,
+    "mois_deces": null,
+    "jour_deces": null,
+    "lieu_deces": null,
+    "lieu_deces_aliase": null,
+    "lieu_deces_affiche": null,
+    "dept_deces": null,
+    "professions": ["sans profession"],
+    "lieux": ["Beaupréau", "Chemillé"],
+    "conjoints": [
+      {
+        "conjoint_id": "IND-Sosa_1",
+        "type_union": "union_libre",
+        "annee_debut": null,
+        "annee_fin": null,
+        "motif_fin": null,
+        "acte_id": null
+      }
+    ],
+    "pere_id": "IND-Sosa_Y2",
+    "mere_id": "IND-0021",
+    "sosa": "Y1",
+    "generation": 1,
+    "branche": "YVARD",
+    "ligne": "directe",
+    "aliase_id": null,
+    "actes": ["AdN-Sosa_Y1"],
+    "decorations": [],
+    "tags": ["gen1", "directe", "yvard"],
+    "aliases": ["YVARD Sabrina"],
+    "notes": ""
+  }
+]

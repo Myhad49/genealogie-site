@@ -1,0 +1,103 @@
+[
+  {
+    "personne_id": "IND-6.3.Ee2",
+    "nom": "MOUSSEAU",
+    "prenoms": ["Renée"],
+    "sexe": "F",
+    "annee_naissance": null,
+    "mois_naissance": null,
+    "jour_naissance": null,
+    "lieu_naissance": null,
+    "lieu_naissance_aliase": null,
+    "lieu_naissance_affiche": null,
+    "dept_naissance": null,
+    "annee_deces": null,
+    "mois_deces": null,
+    "jour_deces": null,
+    "lieu_deces": null,
+    "lieu_deces_aliase": null,
+    "lieu_deces_affiche": null,
+    "dept_deces": null,
+    "professions": [],
+    "lieux": [],
+    "conjoints": [
+      {
+        "conjoint_id": "IND-Sosa_6",
+        "type_union": "mariage",
+        "annee_debut": null,
+        "annee_fin": null,
+        "motif_fin": null,
+        "acte_id": null
+      }
+    ],
+    "pere_id": null,
+    "mere_id": null,
+    "sosa": null,
+    "generation": 3,
+    "branche": "MARTIN",
+    "ligne": "collateraux",
+    "aliase_id": "6.3.Ee2",
+    "actes": [],
+    "decorations": [],
+    "tags": ["gen3", "collateral", "martin"],
+    "aliases": ["MOUSSEAU Renée", "MOUSSEAU R."],
+    "notes": ""
+  },
+  {
+    "personne_id": "IND-7.5.Ex2",
+    "nom": "GIRARD",
+    "prenoms": ["Jean-Claude", "Albert"],
+    "sexe": "M",
+    "annee_naissance": 1937,
+    "mois_naissance": 8,
+    "jour_naissance": 5,
+    "lieu_naissance": "Saint-Rémy-la-Varenne",
+    "lieu_naissance_aliase": [
+      "La Varenne",
+      "Saint-Rémy-la-Varenne",
+      "Brissac Loire Aubance"
+    ],
+    "lieu_naissance_affiche": "Brissac Loire Aubance (Saint-Rémy-la-Varenne)",
+    "dept_naissance": "Maine-et-Loire (49)",
+    "annee_deces": 2011,
+    "mois_deces": 3,
+    "jour_deces": 11,
+    "lieu_deces": "Le Tronquay",
+    "lieu_deces_aliase": ["Le Tronquay"],
+    "lieu_deces_affiche": "Le Tronquay",
+    "dept_deces": "Eure (27)",
+    "professions": ["horticulteur"],
+    "lieux": [
+      "Saint-Rémy-la-Varenne",
+      "Coutures",
+      "Châtillon",
+      "Le Tronquay"
+    ],
+    "conjoints": [
+      {
+        "conjoint_id": "IND-Sosa_7",
+        "type_union": "mariage",
+        "annee_debut": 1960,
+        "annee_fin": 1964,
+        "motif_fin": "divorce",
+        "acte_id": "AdM-7.5.Ex2-Sosa_7"
+      }
+    ],
+    "pere_id": null,
+    "mere_id": null,
+    "sosa": null,
+    "generation": 3,
+    "branche": "MARTIN",
+    "ligne": "collateraux",
+    "aliase_id": "7.5.Ex2",
+    "actes": [
+      "AdN-GIRARD_Jean-Claude_Albert",
+      "AdM-7.5.Ex2-Sosa_7",
+      "AdD-GIRARD_Jean-Claude_Albert"
+    ],
+    "decorations": [],
+    "tags": ["gen3", "collateral", "martin", "horticulteur"],
+    "aliases": ["GIRARD Jean-Claude", "GIRARD J-C."],
+    "notes": ""
+  }
+]

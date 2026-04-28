@@ -1,0 +1,58 @@
+[
+  {
+    "acte_id": "Rec-Sosa_X",
+    "type": "Recensement",
+
+    "annee": null,
+    "lieu": null,
+    "lieu_aliase": null,
+    "lieu_affiche": null,
+    "dept": null,
+    "pays": "France",
+
+    "branche": "MARTIN",
+    "ligne": "directe",
+    "generation": null,
+    "sosa": null,
+
+    "url": "",
+
+    "source": {
+      "depot": "AD49",
+      "commune": null,
+      "registre": "Recensement de population",
+      "periode": [""],
+      "pages": null,
+      "vue": [],
+      "acte_numero": null,
+      "collection": "départementale",
+      "cote_1": null,
+      "cote_2": null
+    },
+
+    "menage": [
+      {
+        "personne_id": null,
+        "nom": null,
+        "prenoms": null,
+        "sexe": null,
+        "lien_chef": null,
+        "age_mention": null,
+        "annee_naissance_calculee": null,
+        "lieu_naissance": null,
+        "lieu_naissance_aliase": null,
+        "lieu_naissance_affiche": null,
+        "dept_naissance": null,
+        "profession": null,
+        "nationalite": null
+      }
+    ],
+
+    "adresse": null,
+    "lieu_dit": null,
+
+    "mentions": [],
+    "tags": [],
+    "notes": ""
+  }
+]

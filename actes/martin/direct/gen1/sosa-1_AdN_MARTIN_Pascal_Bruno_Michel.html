@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕰️</text></svg>">
+  <title>Généalogie MYHAD</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <style>
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    footer {
+      text-align: center;
+      font-size: .78rem;
+      color: var(--text-soft);
+      padding: 24px 40px;
+      margin-top: 40px;
+      border-top: 1px solid var(--parch-line);
+      background: #ede5c8;
+      font-style: italic;
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      footer { padding: 18px 16px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <div id="nav-container"></div>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer>
+    © MYHAD – Contenu libre d’accès, merci de citer la source
+  </footer>
+
+  <!-- ═══════════════════ JS ═══════════════════ -->
+  <script src="js/nav.js"></script>
+  <script>
+    /* ── Active nav sur la page courante ── */
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('#nav-container a').forEach(a => {
+        const href = a.getAttribute('href')?.replace(/\/$/, '');
+        if (href && path.endsWith(href)) a.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* ════════════════════════════════════════════════
+   generation.css
+   ════════════════════════════════════════════════ */
+
+/* ── Variables ── */
+:root {
+  --parch-light:   #f5f0e0;
+  --parch-mid:     #c9b97a;
+  --parch-dark:    #3b2e1a;
+  --parch-line:    #f5f0e0;
+  --section-bg:    #fffdf5;
+  --text-main:     #2c1f0e;
+  --text-soft:     #6b5a3e;
+  --radius:        6px;
+  --shadow:        0 2px 8px rgba(0,0,0,.12);
+}
+
+/* ── Contexte génération ── */
+.gen-context {
+  margin: 28px 40px 0;
+  padding: 14px 20px;
+  background: var(--section-bg);
+  border-left: 4px solid var(--parch-mid);
+  border-radius: var(--radius);
+  font-size: .93rem;
+  color: var(--text-soft);
+  box-shadow: var(--shadow);
+}
+
+.gen-context strong {
+  font-size: 1.05rem;
+  color: var(--parch-dark);
+}
+
+.gen-context .legend-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: .82rem;
+}
+
+/* ── Section tableau ── */
+.table-section {
+  margin: 28px 40px;
+}
+
+.table-section h2 {
+  font-size: 1.1rem;
+  color: var(--parch-mid);
+  border-bottom: 1px solid var(--parch-line);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+  letter-spacing: .03em;
+}
+
+/* ── Badges types ── */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: .78rem;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: .03em;
+}
+
+.badge-naissance-m  { background: #003366; color: #fff; }
+.badge-naissance-f  { background: #6B006B; color: #fff; }
+.badge-mariage      { background: #775402; color: #fff; }
+.badge-deces        { background: #444444; color: #fff; }
+.badge-matricule    { background: #2f4f2f; color: #fff; }
+.badge-recensement  { background: #008080; color: #fff; }
+.badge-notarie      { background: #A0522D; color: #fff; }
+.badge-union-libre  { background: #FF6600; color: #fff; }
+.badge-pacs         { background: #99CCFF; color: #1a1a4e; }
+.badge-bapteme      { background: #5a7a9a; color: #fff; }
+.badge-sepulture    { background: #6a6a6a; color: #fff; }
+
+/* ── Indicateurs spéciaux ── */
+.tag-incertain {
+  color: #885500;
+  font-style: italic;
+  font-size: .82rem;
+}
+
+.tag-inconnu {
+  color: #888;
+  font-style: italic;
+  font-size: .82rem;
+}
+
+.tag-vivant {
+  color: #2a7a2a;
+  font-size: .78rem;
+  font-weight: bold;
+}
+
+/* ── Filtres ── */
+.filters {
+  background: var(--parch-light);
+  border: 1px solid var(--parch-mid);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 140px;
+}
+
+.filter-group legend {
+  font-size: .78rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--parch-dark);
+  margin-bottom: 4px;
+}
+
+.filter-group label {
+  font-size: .83rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.filter-group label:hover {
+  color: var(--parch-dark);
+}
+
+.filters input[type="text"],
+.filters input[type="number"] {
+  border: 1px solid var(--parch-mid);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: .83rem;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filters input[type="text"]:focus,
+.filters input[type="number"]:focus,
+.filters select:focus {
+  outline: 2px solid var(--parch-mid);
+}
+
+.filter-annee-range {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: .83rem;
+}
+
+.filter-annee-range input {
+  width: 70px;
+}
+
+/* ── Tableau actes ── */
+.actes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+  background: var(--section-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.actes-table thead tr {
+  background: var(--parch-dark);
+  color: var(--parch-line);
+  letter-spacing: .04em;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.actes-table thead th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: bold;
+  border-right: 1px solid rgba(201,185,122,.15);
+}
+
+.actes-table thead th:last-child {
+  border-right: none;
+}
+
+.actes-table tbody tr {
+  border-bottom: 1px solid var(--parch-line);
+  transition: background .15s;
+  cursor: pointer;
+}
+
+.actes-table tbody tr:hover {
+  background: #f0e8cc;
+}
+
+.actes-table tbody tr.hidden {
+  display: none;
+}
+
+.actes-table tbody td {
+  padding: 9px 14px;
+  vertical-align: middle;
+  color: var(--text-main);
+}
+
+/* ── Séparateur de personne ── */
+.actes-table tbody tr.person-separator td {
+  background: var(--parch-light);
+  color: var(--parch-mid);
+  font-weight: bold;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 5px 14px;
+  cursor: default;
+}
+
+.actes-table tbody tr.person-separator:hover {
+  background: var(--parch-light);
+}
+
+/* ── Colonne identifiant ── */
+.actes-table td:first-child {
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: .82rem;
+  color: #554400;
+}
+
+/* ── Compteur résultats ── */
+.results-count {
+  font-size: .82rem;
+  color: #666;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+
+  .table-section { margin: 16px 12px; }
+  .gen-context   { margin: 16px 12px 0; }
+
+  .actes-table { font-size: .78rem; }
+
+  .actes-table thead th,
+  .actes-table tbody td {
+    padding: 7px 8px;
+  }
+
+  .actes-table .col-dept { display: none; }
+}

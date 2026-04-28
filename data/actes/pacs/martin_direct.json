@@ -1,0 +1,72 @@
+[
+  {
+    "acte_id": "Pacs-Sosa_X-Y",
+    "type": "PACS",
+
+    "annee_declaration": null,
+    "mois_declaration": null,
+    "jour_declaration": null,
+    "lieu_declaration": null,
+    "lieu_declaration_aliase": null,
+    "lieu_declaration_affiche": null,
+    "dept_declaration": null,
+    "pays_declaration": "France",
+
+    "annee_dissolution": null,
+    "mois_dissolution": null,
+    "jour_dissolution": null,
+    "motif_dissolution": null,
+
+    "branche": "MARTIN",
+    "ligne": "directe",
+    "generation": null,
+    "sosa": [null, null],
+
+    "url": "",
+
+    "source": {
+      "depot": null,
+      "commune": null,
+      "registre": "PACS",
+      "periode": [""],
+      "pages": null,
+      "vue": [],
+      "acte_numero": null,
+      "collection": null,
+      "cote_1": null,
+      "cote_2": null
+    },
+
+    "partenaire_1": {
+      "personne_id": null,
+      "nom": null,
+      "prenoms": null,
+      "sexe": null,
+      "annee_naissance": null,
+      "profession": null,
+      "adresse_domicile_mention": null,
+      "lieu_domicile_mention": null,
+      "lieu_domicile_mention_aliase": null,
+      "lieu_domicile_mention_affiche": null,
+      "dept_domicile_mention": null
+    },
+
+    "partenaire_2": {
+      "personne_id": null,
+      "nom": null,
+      "prenoms": null,
+      "sexe": null,
+      "annee_naissance": null,
+      "profession": null,
+      "adresse_domicile_mention": null,
+      "lieu_domicile_mention": null,
+      "lieu_domicile_mention_aliase": null,
+      "lieu_domicile_mention_affiche": null,
+      "dept_domicile_mention": null
+    },
+
+    "mentions": [],
+    "tags": [],
+    "notes": ""
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "metier_id": "MET-C001",
+    "nom": "closier",
+    "variantes": ["clozier", "cloysier"],
+    "categorie": "agriculture",
+    "definition": "Fermier exploitant un petit domaine rural (la closerie), souvent en métayage.",
+    "periode": "XVIIe – XIXe siècle",
+    "regions": ["Anjou", "Maine", "Poitou"],
+    "equivalent_moderne": "agriculteur / fermier",
+    "sources": ["Dictionnaire de l'Académie française", "Littré"],
+    "notes": ""
+  },
+  {
+    "metier_id": "MET-C002",
+    "nom": "charpentier",
+    "variantes": ["charpantier", "carpentier"],
+    "categorie": "artisanat / bâtiment",
+    "definition": "Artisan travaillant le bois pour la construction (charpentes, ossatures).",
+    "periode": "Toutes périodes",
+    "regions": [],
+    "equivalent_moderne": "charpentier",
+    "sources": [],
+    "notes": ""
+  }
+]

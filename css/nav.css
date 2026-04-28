@@ -1,0 +1,235 @@
+/* ================================================== */
+/* NAV.CSS — Navigation principale, hamburger        */
+/* ================================================== */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--parch-dark);
+  border-bottom: 2px solid var(--parch-line);
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 54px;
+  gap: 8px;
+}
+
+/* ── Logo ── */
+.nav-logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--parch-line) !important;
+  letter-spacing: .08em;
+  text-decoration: none !important;
+  white-space: nowrap;
+  margin-right: 18px;
+}
+
+.nav-logo:hover {
+  color: #fff !important;
+}
+
+.clock-icon {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+/* ── Menu principal ── */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+  height: 100%;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-menu > li {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu > li > span,
+.nav-menu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 14px;
+  height: 100%;
+  color: var(--parch-light);
+  font-size: .88rem;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: .02em;
+  transition: background .18s, color .18s;
+  text-decoration: none;
+}
+
+.nav-menu > li > span:hover,
+.nav-menu > li > a:hover,
+.nav-menu > li > span.active,
+.nav-menu > li > a.active {
+  background: rgba(201,185,122,.18);
+  color: var(--parch-line);
+}
+
+/* ── Flèches ── */
+.arrow {
+  font-size: .65rem;
+  opacity: .7;
+  transition: transform .2s;
+}
+
+/* ── Sous-menus (niveaux 1+) ── */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #3a2408;
+  border: 1px solid var(--parch-line);
+  border-radius: 0 0 var(--radius) var(--radius);
+  list-style: none;
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  z-index: 999;
+}
+
+/* Sous-menus imbriqués (niveau 2+) */
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+  border-radius: 0 var(--radius) var(--radius) var(--radius);
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li > span,
+.submenu li > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 16px;
+  color: var(--parch-light);
+  font-size: .85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background .15s;
+  gap: 8px;
+}
+
+.submenu li > span:hover,
+.submenu li > a:hover,
+.submenu li > a.active {
+  background: rgba(201,185,122,.22);
+  color: var(--parch-line);
+}
+
+/* Affichage au survol */
+.nav-menu > li:hover > .submenu,
+.submenu li:hover > .submenu {
+  display: block;
+}
+
+/* Rotation flèche au survol */
+.nav-menu > li:hover > span > .arrow,
+.submenu li:hover > span > .arrow {
+  transform: rotate(90deg);
+}
+
+/* ── Hamburger (mobile) ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--parch-line);
+  border-radius: 2px;
+  transition: all .25s;
+}
+
+/* ── Responsive mobile ── */
+@media (max-width: 768px) {
+
+  .hamburger { display: flex; }
+
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 54px);
+    background: var(--parch-dark);
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 12px 0 24px;
+    gap: 0;
+    z-index: 999;
+  }
+
+  .nav-menu.open { display: flex; }
+
+  .nav-menu > li {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu > li > span,
+  .nav-menu > li > a {
+    width: 100%;
+    height: auto;
+    padding: 12px 24px;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: rgba(0,0,0,.2);
+    width: 100%;
+  }
+
+  .submenu.open { display: block; }
+
+  .submenu .submenu {
+    left: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,.2);
+    padding-left: 16px;
+  }
+
+  .submenu li > span,
+  .submenu li > a {
+    padding: 10px 24px;
+  }
+}

@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: var(--parch-bg, #f5f0eb);
+    color: var(--text-main, #2c1810);
+    min-height: 100vh;
+}
+
+header {
+    background: var(--parch-dark, #2c1810);
+    color: #f5f0eb;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    color: #f5f0eb;
+}
+
+header a {
+    color: #d4a96a;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Barre de recherche ── */
+.search-bar {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    border: 2px solid #2c1810;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #d4a96a;
+}
+
+.search-bar button {
+    padding: 0.75rem 1.5rem;
+    background: #2c1810;
+    color: #f5f0eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+}
+
+.search-bar button:hover {
+    background: #d4a96a;
+    color: #2c1810;
+}
+
+/* ── Bloc filtres ── */
+.filtres-wrapper {
+    background: #fff;
+    border: 1px solid #d4a96a;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.filtres-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #2c1810;
+    color: #f5f0eb;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filtres-header span {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.filtres-header .toggle-icon {
+    font-size: 0.85rem;
+    transition: transform 0.2s;
+}
+
+.filtres-header.ouvert .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.filtres-body {
+    display: none;
+    padding: 1rem;
+}
+
+.filtres-body.ouvert {
+    display: block;
+}
+
+/* Groupes de filtres */
+.filtre-groupe {
+    margin-bottom: 1rem;
+}
+
+.filtre-groupe-titre {
+    font-size: 0.78rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #8b6914;
+    border-bottom: 1px solid #e8dfc0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.65rem;
+}
+
+.filtre-ligne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.filtre-ligne label {
+    font-size: 0.83rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 140px;
+}
+
+.filtre-ligne select,
+.filtre-ligne input[type="number"] {
+    padding: 0.38rem 0.55rem;
+    font-family: Georgia, serif;
+    font-size: 0.88rem;
+    border: 1px solid #2c1810;
+    border-radius: 4px;
+    background: #f5f0eb;
+    cursor: pointer;
+}
+
+.filtre-ligne select:focus,
+.filtre-ligne input:focus {
+    outline: none;
+    border-color: #d4a96a;
+}
+
+/* Checkboxes */
+.filtre-checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+    margin-top: 0.25rem;
+}
+
+.filtre-checks label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: normal;
+    cursor: pointer;
+    min-width: auto;
+}
+
+.filtre-checks input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* Barre basse filtres */
+.filtres-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e8dfc0;
+    margin-top: 0.75rem;
+}
+
+.btn-reset {
+    padding: 0.4rem 1rem;
+    background: transparent;
+    border: 1px solid #2c1810;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    color: #2c1810;
+}
+
+.btn-reset:hover {
+    background: #2c1810;
+    color: #f5f0eb;
+}
+
+/* Filtres actifs (pills) */
+.filtres-actifs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    min-height: 0;
+}
+
+.filtre-pill {
+    background: #2c1810;
+    color: #f5f0eb;
+    border-radius: 12px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.filtre-pill button {
+    background: none;
+    border: none;
+    color: #d4a96a;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0;
+    line-height: 1;
+}
+
+/* ── Onglets ── */
+.onglets {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #2c1810;
+}
+
+.onglet {
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    background: #e8e0d5;
+    border: 1px solid #2c1810;
+    border-bottom: none;
+    color: #2c1810;
+    transition: background 0.15s;
+}
+
+.onglet.actif {
+    background: #2c1810;
+    color: #f5f0eb;
+}
+
+.onglet:hover:not(.actif) {
+    background: #d4c4a8;
+}
+
+/* ── Tri + compteur ── */
+.barre-resultats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.85rem;
+}
+
+.compteur {
+    font-size: 0.88rem;
+    color: #666;
+    font-style: italic;
+}
+
+.tri-select {
+    padding: 0.3rem 0.55rem;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    border: 1px solid #2c1810;
+    border-radius: 4px;
+    background: #f5f0eb;
+}
+
+/* ── Cartes résultats ── */
+.resultats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.carte {
+    background: #fff;
+    border: 1px solid #d4a96a;
+    border-left: 4px solid #2c1810;
+    border-radius: 4px;
+    padding: 0.9rem 1.15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-left-color 0.2s, background 0.15s;
+}
+
+.carte:hover {
+    border-left-color: #d4a96a;
+    background: #faf7f2;
+}
+
+/* Couleurs bord gauche par type */
+.carte[data-type="Naissance-M"] {
+    border-left-color: #003366;
+}
+
+.carte[data-type="Naissance-F"] {
+    border-left-color: #6B006B;
+}
+
+.carte[data-type="Mariage"] {
+    border-left-color: #775402;
+}
+
+.carte[data-type="Décès"] {
+    border-left-color: #444444;
+}
+
+.carte[data-type="Individu"] {
+    border-left-color: #2c1810;
+}
+
+.carte-type {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    border-radius: 3px;
+    font-size: 0.73rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+    color: #fff;
+}
+
+.type-Naissance-M {
+    background: #003366;
+}
+
+.type-Naissance-F {
+    background: #6B006B;
+}
+
+.type-Mariage {
+    background: #775402;
+}
+
+.type-Décès {
+    background: #444444;
+}
+
+.type-Individu {
+    background: #2c1810;
+}
+
+.type-Matricule {
+    background: #2f4f2f;
+}
+
+.type-Recensement {
+    background: #008080;
+}
+
+.type-Notarié {
+    background: #A0522D;
+}
+
+.carte-corps {
+    flex: 1;
+    min-width: 0;
+}
+
+.carte-titre {
+    font-size: 1.02rem;
+    font-weight: bold;
+    margin-bottom: 0.22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carte-meta {
+    font-size: 0.82rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
+}
+
+.carte-meta .sep {
+    color: #bbb;
+    margin: 0 0.3rem;
+}
+
+.carte-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.3rem;
+}
+
+.carte-badge {
+    background: #f0e8dc;
+    border: 1px solid #d4a96a;
+    border-radius: 3px;
+    padding: 0.08rem 0.38rem;
+    font-size: 0.72rem;
+    color: #2c1810;
+}
+
+.carte-badge.decor {
+    background: #fff3cd;
+    border-color: #8b6914;
+    color: #8b6914;
+}
+
+.carte-badge.sosa-b {
+    background: #2c1810;
+    color: #d4a96a;
+    font-family: monospace;
+}
+
+.carte-badge.union {
+    background: #e8e0f0;
+    border-color: #6B006B;
+    color: #6B006B;
+}
+
+.carte-lien {
+    white-space: nowrap;
+    padding: 0.38rem 0.85rem;
+    background: #2c1810;
+    color: #f5f0eb;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+}
+
+.carte-lien:hover {
+    background: #d4a96a;
+    color: #2c1810;
+}
+
+.vide {
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+    font-style: italic;
+}
+
+mark {
+    background: #fff3cd;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+    .filtre-ligne {
+        flex-direction: column;
+    }
+
+    .carte {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carte-lien {
+        align-self: flex-end;
+    }
+}

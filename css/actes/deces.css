@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e8dfc0;
+    font-family: Georgia, serif;
+    color: #222;
+}
+
+.a4-wrapper {
+    max-width: 210mm;
+    margin: 32px auto 48px;
+    background-image: url("../../../../img/actes/fonds/fond_deces_fr.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top center;
+    border: 1px solid #bbb;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.22);
+    padding: 14mm;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.acte-header {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.acte-header h1 {
+    font-family: "Handlee", cursive;
+    font-size: 1.55rem;
+    color: #3a2800;
+    margin: 0 0 4px 0;
+    letter-spacing: .04em;
+}
+
+.acte-header h2 {
+    font-family: "Handlee", cursive;
+    font-size: 1.05rem;
+    color: #5a4010;
+    margin: 0 0 2px 0;
+    font-weight: normal;
+}
+
+.acte-header h3 {
+    font-family: "Handlee", cursive;
+    font-size: .97rem;
+    color: #7a5a20;
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.section {
+    border: 1.5px solid #7a5a20;
+    border-radius: 6px;
+    background: rgba(245, 240, 220, 0.72);
+    padding: 12px 16px;
+    margin: 14px 0;
+}
+
+.section:first-of-type {
+    margin-top: 0;
+}
+
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
+.section h2 {
+    font-family: "Handlee", cursive;
+    font-size: 1.02rem;
+    color: #3a2800;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #c8a84b;
+    padding-bottom: 4px;
+}
+
+.section h3 {
+    font-family: "Handlee", cursive;
+    font-size: .93rem;
+    color: #5a3a00;
+    margin: 10px 0 4px 0;
+}
+
+.pre {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid #ccc;
+    padding: 12px 14px;
+    white-space: pre-wrap;
+    font-family: "Courier New", monospace;
+    font-size: .78rem;
+    line-height: 1.65;
+    border-radius: 4px;
+}
+
+.norm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+}
+
+.norm-block {
+    background: rgba(255, 255, 255, 0.45);
+    border-left: 3px solid #c8a84b;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    font-size: .83rem;
+}
+
+.norm-block b {
+    display: block;
+    color: #3a2800;
+    margin-bottom: 2px;
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.norm-block span {
+    color: #333;
+    line-height: 1.5;
+}
+
+.norm-full {
+    grid-column: 1 / -1;
+}
+
+.annot-list {
+    font-size: .82rem;
+    line-height: 1.65;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.annot-list li {
+    margin-bottom: 6px;
+}
+
+.sources-list {
+    font-size: .80rem;
+    line-height: 1.7;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.sources-list li {
+    margin-bottom: 4px;
+}
+
+.sources-list a {
+    color: #5a3a00;
+    overflow-wrap: anywhere;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px auto;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.print-bar {
+    max-width: 210mm;
+    margin: 0 auto 12px;
+    text-align: right;
+    padding: 0 4px;
+}
+
+.btn-print {
+    background: #3a2800;
+    color: #f5f0e1;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    font-size: .88rem;
+    cursor: pointer;
+    letter-spacing: .04em;
+    transition: background .2s;
+}
+
+.btn-print:hover {
+    background: #7a5a20;
+}
+
+@media (max-width: 700px) {
+    .a4-wrapper {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        padding: 6mm;
+    }
+
+    .norm-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ══════════════════════════════════════════
+       IMPRESSION
+    ══════════════════════════════════════════ */
+@page {
+    size: A4;
+    margin: 10mm 14mm;
+}
+
+@media print {
+
+    body {
+        background: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 14mm;
+        font-size: 11pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .print-bar {
+        display: none;
+    }
+
+    #nav-container {
+        display: none !important;
+    }
+
+    /* ── wrapper : laisse @page gérer les marges ── */
+    .a4-wrapper {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0 14mm;
+        /* ← padding latéral rétabli */
+        box-shadow: none;
+        border: none;
+        background-image: none !important;
+        position: static;
+        box-sizing: border-box;
+    }
+
+    /* ── fond fixe répété sur chaque page ── */
+    .a4-wrapper::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../../../../img/actes/fonds/fond_deces_fr.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ── sections : margin identique au web, autoriser les coupures ── */
+    .section {
+        margin: 14px 0;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 4mm;
+        /* ← petit, acceptable en haut de section normale */
+        padding-bottom: 4mm;
+        break-inside: auto;
+        page-break-inside: auto;
+        orphans: 3;
+        widows: 3;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    .section:first-of-type {
+        margin-top: 0;
+    }
+
+    .section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /* empêche qu'un titre h3 soit seul en bas de page sans son contenu */
+    .section h2,
+    .section h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* ── liens : afficher l'URL complète après le texte ── */
+    a[href]::after {
+        content: " — " attr(href);
+        font-size: .75em;
+        color: #444;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+    }
+
+    /* Exception : ne pas dupliquer si le texte EST déjà l'URL */
+    a[href^="http"]::after {
+        content: " — " attr(href);
+    }
+
+    /* ── grille en colonnes simples à l'impression ── */
+    .norm-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 12px;
+    }
+
+    .norm-block {
+        padding: 6px 10px;
+    }
+
+    .pre {
+        font-size: .73rem;
+        line-height: 1.5;
+        padding: 8px 10px;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .annot-list,
+    .sources-list {
+        font-size: .76rem;
+        line-height: 1.55;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

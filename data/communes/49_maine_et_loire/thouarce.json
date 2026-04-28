@@ -1,0 +1,45 @@
+{
+  "commune_id": "COM-49-THOUARCE",
+  "nom_actuel": "Bellevigne-en-Layon",
+  "dept": "Maine-et-Loire (49)",
+  "dept_code": "49",
+  "region": "Pays de la Loire",
+  "region_historique": "Anjou",
+  "canton_actuel": "Doué-en-Anjou",
+  "arrondissement": "Saumur",
+  "pays": "France",
+  "code_insee_actuel": "49028",
+
+  "historique": [
+    {
+      "nom": "Thouarcé",
+      "periode_debut": null,
+      "periode_fin": 2015,
+      "type_changement": "fusion",
+      "commune_absorbante": "Bellevigne-en-Layon",
+      "notes": "Fusion avec Faveraye-Mâchelles, Faye-d'Anjou, Rablay-sur-Layon"
+    },
+    {
+      "nom": "Bellevigne-en-Layon",
+      "periode_debut": 2016,
+      "periode_fin": null,
+      "type_changement": null,
+      "commune_absorbante": null,
+      "notes": ""
+    }
+  ],
+
+  "aliases": ["Thouarcé", "Bellevigne-en-Layon", "Thouarce"],
+
+  "lieux_dits": [
+    "La Guimonière",
+    "Le Moulin Neuf"
+  ],
+
+  "archives": {
+    "AD49_cote_EC": "EC 0419",
+    "AD49_cote_mi": "1 Mi / EC 0419"
+  },
+
+  "notes": ""
+}

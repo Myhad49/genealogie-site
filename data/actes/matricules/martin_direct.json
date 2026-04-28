@@ -1,0 +1,84 @@
+[
+  {
+    "acte_id": "Mat-Sosa_X",
+    "type": "Matricule",
+
+    "annee_declaration": null,
+    "mois_declaration": null,
+    "jour_declaration": null,
+    "lieu_declaration": null,
+    "lieu_declaration_aliase": null,
+    "lieu_declaration_affiche": null,
+    "dept_declaration": null,
+    "pays_declaration": "France",
+
+    "branche": "MARTIN",
+    "ligne": "directe",
+    "generation": null,
+    "sosa": null,
+
+    "url": "",
+
+    "source": {
+      "depot": "AD49",
+      "commune": null,
+      "registre": "Registre matricule",
+      "periode": ["", ""],
+      "pages": null,
+      "vue": [],
+      "acte_numero": "",
+      "numero_matricule": "",
+      "bureau_recrutement": "",
+      "classe": "",
+      "collection": "départementale",
+      "cote_1": null,
+      "cote_2": null
+    },
+
+    "personne": {
+      "personne_id": null,
+      "nom": null,
+      "prenoms": null,
+      "sexe": "M",
+      "annee_naissance": null,
+      "mois_naissance": null,
+      "jour_naissance": null,
+      "lieu_naissance": null,
+      "lieu_naissance_aliase": null,
+      "lieu_naissance_affiche": null,
+      "dept_naissance": null,
+      "profession": null,
+      "signalement": {
+        "taille": null,
+        "cheveux": null,
+        "yeux": null,
+        "front": null,
+        "nez": null,
+        "bouche": null,
+        "menton": null,
+        "visage": null,
+        "teint": null,
+        "signes_particuliers": null
+      }
+    },
+
+    "services": [
+      {
+        "corps": null,
+        "regiment": null,
+        "grade": null,
+        "annee_entree": null,
+        "annee_sortie": null,
+        "motif_sortie": null
+      }
+    ],
+
+    "decorations": [],
+    "campagnes": [],
+    "blessures": [],
+
+    "mentions": [],
+    "tags": [],
+    "notes": ""
+  }
+]
