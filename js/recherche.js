@@ -40,7 +40,7 @@ async function preChargerActes() {
 
   const promesses = Array.from(fichiersUniques).map(async (fichier) => {
     try {
-      const res = await fetch('/data/' + fichier);
+      const res = await fetch('./data/' + fichier);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const actesFichier = await res.json();
       if (Array.isArray(actesFichier)) {
@@ -64,7 +64,7 @@ async function preChargerActes() {
 async function chargerMaires() {
   // Fonction autonome — ne remonte jamais d'erreur
   try {
-    const res = await fetch('/data/individus/maires.json');
+    const res = await fetch('./data/individus/maires.json');
     if (!res.ok) {
       console.warn(`⚠️ maires.json introuvable (HTTP ${res.status})`);
       return;   // ← on sort proprement, pas de throw
