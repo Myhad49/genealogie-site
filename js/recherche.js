@@ -14,7 +14,7 @@ let timerInput = null;
 // ============================================================
 async function chargerDonnees() {
   try {
-    const r = await fetch('/data/index.json');
+    const r = await fetch('./data/index.json');
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     DATA = await r.json();
     console.log('✓ DATA chargée:', DATA);
