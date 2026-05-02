@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "uuid": "33cb8448-678b-4db5-a25a-90b2167cb989",
+    "personne_id": "IND-Sosa_77",
+    "sosa": 77,
+    "personne_num": "77.3",
+    "branche": "martin",
+    "ligne": "direct",
+    "lignee": "paternelle",
+    "generation": 7,
+    "fichier_fiche": "individus/martin/direct/gen7/33cb8448-678b-4db5-a25a-90b2167cb989/fiche.html"
+  },
+	"identite": {
+		"nom": {
+			"nom": "AMANT",
+			"nom_variantes": [
+				"AMANT"
+			]
+		},
+		"prenoms": {
+			"prenoms": [
+				"Louise"
+			],
+			"prenom_variantes": [
+				"Louise"
+			]
+		},
+		"sexe": "F",
+		"religion": null,
+		"notes": "",
+		"search": "AMANT Louise"
+	}
+}

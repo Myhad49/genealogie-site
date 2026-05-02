@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "uuid": "6ff173c5-fc15-4eff-97c6-c16ad53c8f14",
+    "personne_id": null,
+    "sosa": null,
+    "personne_num": null,
+    "branche": "autres",
+    "ligne": "d",
+    "lignee": null,
+    "generation": null,
+    "fichier_fiche": "individus/martin/autres/d/6ff173c5-fc15-4eff-97c6-c16ad53c8f14/fiche.html"
+  },
+	"identite": {
+		"nom": {
+			"uuid": "",
+			"nom": "DUBIJON",
+			"nom_variantes": [
+				"DUBIJON"
+			]
+		},
+		"prenoms": {
+			"uuid": "",
+			"prenoms": [
+				"Noël"
+			],
+			"prenom_variantes": [
+				"Noël"
+			]
+		},
+		"sexe": "M",
+		"religion": null,
+		"notes": "",
+		"search": "DUBIJON Noël"
+	}
+}

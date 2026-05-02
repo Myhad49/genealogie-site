@@ -1,0 +1,27 @@
+{
+	"meta": {
+		"type": "chef-lieu",
+		"chef_lieu_id": 49134,
+		"code_postal": [
+			49380,
+			49750
+		],
+		"commune_nom": "Bellevigne-en-Layon",
+		"url_fiche": "communes/fra-fr/fr-pdl/fr-49/49345/49345.html"
+	},
+	"49066": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49066/49066.json"
+	},
+	"49133": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49133/49133.json"
+	},
+	"49134": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49134/49134.json"
+	},
+	"49256": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49256/49256.json"
+	},
+	"49345": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49345/49345.json"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"meta": {
+		"uuid": "8e17fafb-1959-481d-9e1c-5d5de1982338",
+		"fonction": "officier",
+		"url_fiche": "individus/officiers/fra-fr/fr-pdl/fr-49/49345/49134/8e17fafb-1959-481d-9e1c-5d5de1982338/fiche.html"
+	},
+	"identite": {
+		"nom": {
+			"nom": "TIJOU",
+			"nom_variantes": [
+				"TIJOU"
+			]
+		},
+		"prenoms": {
+			"prenoms": [
+				null
+			],
+			"prenom_variantes": [
+				null
+			]
+		},
+		"sexe": "M",
+		"religion": null,
+		"notes": "",
+		"search": "TIJOU"
+	}
+}

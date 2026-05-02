@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "uuid": "4ea8a577-511a-4fdc-8a3c-dc572412692b",
+    "personne_id": "IND-76.12",
+    "sosa": null,
+    "personne_num": "76.12",
+    "branche": "martin",
+    "ligne": "collateral",
+    "lignee": null,
+    "generation": 7,
+    "fichier_fiche": "individus/martin/collateraux/gen7/4ea8a577-511a-4fdc-8a3c-dc572412692b/fiche.html"
+  },
+	"identite": {
+		"nom": {
+			"uuid": "",
+			"nom": "CERISIER",
+			"nom_variantes": [
+				"CERISIER"
+			]
+		},
+		"prenoms": {
+			"uuid": "",
+			"prenoms": [
+				"Auguste"
+			],
+			"prenom_variantes": [
+				"Auguste"
+			]
+		},
+		"sexe": "M",
+		"religion": null,
+		"notes": "",
+		"search": "CERISIER Auguste"
+	}
+}

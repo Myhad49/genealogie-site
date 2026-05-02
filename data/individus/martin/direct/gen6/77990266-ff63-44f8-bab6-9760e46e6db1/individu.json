@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"uuid": "77990266-ff63-44f8-bab6-9760e46e6db1",
+		"personne_id": "IND-Sosa_38",
+		"sosa": 38,
+		"personne_num": "38.2",
+		"branche": "martin",
+		"ligne": "direct",
+		"lignee": "paternelle",
+		"generation": 6,
+		"url_fiche": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/fiche.html"
+	},
+	"identite": {
+		"nom": {
+			"nom": "CERISIER",
+			"nom_variantes": [
+				"CERISIER"
+			]
+		},
+		"prenoms": {
+			"prenoms": [
+				"Amand"
+			],
+			"prenom_variantes": [
+				"Amand",
+				"Amant"
+			]
+		},
+		"sexe": "M",
+		"religion": null,
+		"notes": "",
+		"search": "CERISIER Amand"
+	},
+	"actes": {
+		"naissance": {
+			"type": "naissance",
+			"acte_id": "AdN-77990266-ff63-44f8-bab6-9760e46e6db1",
+			"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_naissance.json",
+			"url": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_naissance.html"
+		},
+		"bapteme": {
+			"type": "bapteme",
+			"acte_id": "AdB-77990266-ff63-44f8-bab6-9760e46e6db1",
+			"fichier": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_bapteme.json",
+			"url": null
+		},
+		"union": {
+			"type": "mariage",
+			"acte_id": "AdM-77990266-ff63-44f8-bab6-9760e46e6db1",
+			"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_mariage.json",
+			"url": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/unions/acte_mariage_1.html"
+		},
+		"deces": {
+			"type": "deces",
+			"acte_id": "AdD-77990266-ff63-44f8-bab6-9760e46e6db1",
+			"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_deces.json",
+			"url": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/actes/acte_deces.html"
+		}
+	},
+	"matricule": {
+		"type": "matricule",
+		"source_id": "matricule-77990266-ff63-44f8-bab6-9760e46e6db1",
+		"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/matricule.json",
+		"url": "individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/matricule.html"
+	},
+	"professions": {
+		"type": "professions",
+		"source_id": "professions-77990266-ff63-44f8-bab6-9760e46e6db1",
+		"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/professions.json"
+	},
+	"residences": {
+		"type": "residences",
+		"source_id": "residences-77990266-ff63-44f8-bab6-9760e46e6db1",
+		"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/residences.json"
+	},
+	"autres": {
+		"type": "autres",
+		"source_id": "autres-77990266-ff63-44f8-bab6-9760e46e6db1",
+		"fichier": "data/individus/martin/direct/gen6/77990266-ff63-44f8-bab6-9760e46e6db1/autres.json"
+	}
+}

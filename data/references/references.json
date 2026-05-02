@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "uuid": "references",
+    "type": "fonds_reference",
+    "url_fiche": "references/references.html"
+  },
+	"origines": {
+		"data": "data/references/origines/origines.json"
+	},
+	"professions": {
+		"data": "data/references/professions/professions.json"
+	}
+}

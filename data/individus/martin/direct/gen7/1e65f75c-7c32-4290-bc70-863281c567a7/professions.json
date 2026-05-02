@@ -1,0 +1,18 @@
+{
+  "profession_1": {
+    "uuid": "3f2d9632-9f29-4aa9-85ba-51892c0ed8a7",
+    "date": {
+      "annee": 1825,
+      "mois": 2,
+      "jour": 1
+    },
+    "lieu_profession": {
+      "mention": null,
+      "commune_id": null,
+      "departement": null
+    },
+		"source": {
+			"acte_id": "AdN-77990266-ff63-44f8-bab6-9760e46e6db1"
+		}
+  }
+}

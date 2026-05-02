@@ -1,0 +1,18 @@
+{
+  "residence_1": {
+    "lieu_residence": {
+			"adresse": null,
+      "mention": "Faye",
+      "commune_id": 49134,
+      "departement": "fr-49"
+    },
+    "date": {
+      "annee": 1825,
+      "mois": 2,
+      "jour": 1
+    },
+		"source": {
+			"acte_id": "AdN-77990266-ff63-44f8-bab6-9760e46e6db1"
+		}
+  }
+}

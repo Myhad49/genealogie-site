@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "uuid": "prenoms",
+    "type": "referentiel_origines_prenoms",
+    "url_fiche": "references/origines/prenoms/prenoms.html"
+  },
+  "noms_c": {
+    "data": "data/references/origine/prenoms/a/efffa913-caad-4d05-b0db-d0315511dd8c.json"
+  }
+}

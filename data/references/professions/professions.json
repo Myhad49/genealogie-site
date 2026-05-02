@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "uuid": "professions",
+    "type": "referentiel_professions",
+    "url_fiche": "references/professions/professions.html"
+  },
+	"professions_p": {
+		"data": "data/references/professions/p/professions_p.json"
+	}
+}

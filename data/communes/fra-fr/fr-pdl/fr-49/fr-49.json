@@ -1,0 +1,15 @@
+{
+	"meta": {
+		"type": "département",
+		"departement": "fr-49",
+		"departement_num": "49",
+		"departement_nom": "Maine-et-Loire",
+		"url_fiche": "communes/fra-fr/fr-pdl/fr-49/fr-49.html"
+	},
+	"49086": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49086/49086.json"
+	},
+	"49345": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/49345/49345.json"
+	}
+}

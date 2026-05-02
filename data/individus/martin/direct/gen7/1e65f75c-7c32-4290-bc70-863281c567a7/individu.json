@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "uuid": "1e65f75c-7c32-4290-bc70-863281c567a7",
+    "personne_id": "IND-Sosa_76",
+    "sosa": 76,
+    "personne_num": "77.11",
+    "branche": "martin",
+    "ligne": "direct",
+    "lignee": "paternelle",
+    "generation": 7,
+    "fichier_fiche": "individus/martin/direct/gen7/1e65f75c-7c32-4290-bc70-863281c567a7/fiche.html"
+  },
+	"identite": {
+		"nom": {
+			"nom": "CERISIER",
+			"nom_variantes": [
+				"CERISIER"
+			]
+		},
+		"prenoms": {
+			"prenoms": [
+				"Noël-Jean"
+			],
+			"prenom_variantes": [
+				"Noël-Jean"
+			]
+		},
+		"sexe": "M",
+		"religion": null,
+		"notes": "",
+		"search": "CERISIER Noël-Jean"
+	}
+}

@@ -1,218 +1,215 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕰️</text></svg>">
-  <title>Recherche — Généalogie</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/recherche.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕰️</text></svg>">
+	<title>Recherche — Généalogie</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/recherche.css">
 </head>
+
 <body>
 
-<header>
-  <div>
-    <a href="/genealogie-site/">← Accueil</a>
-    <h1>🔍 Recherche générale</h1>
-  </div>
-</header>
+	<header>
+		<div>
+			<a href="/genealogie-site/">← Accueil</a>
+			<h1>🔍 Recherche générale</h1>
+		</div>
+	</header>
 
-<div class="container">
+	<div class="container">
 
-  <!-- ── Barre de recherche ── -->
-  <div class="search-bar">
-    <input type="text" id="input-recherche"
-           placeholder="Nom, prénom, lieu, profession, cote d'archive, témoin…"
-           autocomplete="off">
-    <button onclick="lancerRecherche()">Rechercher</button>
-  </div>
+		<!-- ── Barre de recherche ── -->
+		<div class="search-bar">
+			<input type="text" id="input-recherche" placeholder="Nom, prénom, lieu, profession, cote d'archive, témoin…"
+				autocomplete="off">
+			<button onclick="lancerRecherche()">Rechercher</button>
+		</div>
 
-  <!-- ── Bloc filtres collapsible ── -->
-  <div class="filtres-wrapper">
-    <div class="filtres-header" id="filtres-toggle" onclick="toggleFiltres()">
-      <span>⚙ Filtres avancés</span>
-      <span class="toggle-icon">▼</span>
-    </div>
-    <div class="filtres-body" id="filtres-body">
+		<!-- ── Bloc filtres collapsible ── -->
+		<div class="filtres-wrapper">
+			<div class="filtres-header" id="filtres-toggle" onclick="toggleFiltres()">
+				<span>⚙ Filtres avancés</span>
+				<span class="toggle-icon">▼</span>
+			</div>
+			<div class="filtres-body" id="filtres-body">
 
-      <!-- Groupe 1 : Acte -->
-      <div class="filtre-groupe">
-        <div class="filtre-groupe-titre">📜 Acte</div>
-        <div class="filtre-ligne">
-          <label>Type d'acte
-            <select id="filtre-type">
-              <option value="">Tous</option>
-              <option value="Naissance">Naissance</option>
-              <option value="Mariage">Mariage</option>
-              <option value="Décès">Décès</option>
-              <option value="Matricule">Matricule</option>
-              <option value="Recensement">Recensement</option>
-              <option value="Notarié">Notarié</option>
-            </select>
-          </label>
-          <label>Génération
-            <select id="filtre-generation">
-              <option value="">Toutes</option>
-            </select>
-          </label>
-          <label>Période — de
-            <input type="number" id="filtre-annee-debut"
-                   placeholder="1200" min="1000" max="2100" style="width:90px">
-          </label>
-          <label>à
-            <input type="number" id="filtre-annee-fin"
-                   placeholder="2026" min="1000" max="2100" style="width:90px">
-          </label>
-          <label>Dépôt d'archives
-            <select id="filtre-depot">
-              <option value="">Tous</option>
-            </select>
-          </label>
-          <label>Cote (recherche libre)
-            <input type="text" id="filtre-cote"
-                   placeholder="ex: 5 Mi 4"
-                   style="padding:0.38rem 0.55rem;font-family:Georgia,serif;
+				<!-- Groupe 1 : Acte -->
+				<div class="filtre-groupe">
+					<div class="filtre-groupe-titre">📜 Acte</div>
+					<div class="filtre-ligne">
+						<label>Type d'acte
+							<select id="filtre-type">
+								<option value="">Tous</option>
+								<option value="Naissance">Naissance</option>
+								<option value="Mariage">Mariage</option>
+								<option value="Décès">Décès</option>
+								<option value="Matricule">Matricule</option>
+								<option value="Recensement">Recensement</option>
+								<option value="Notarié">Notarié</option>
+							</select>
+						</label>
+						<label>Génération
+							<select id="filtre-generation">
+								<option value="">Toutes</option>
+							</select>
+						</label>
+						<label>Période — de
+							<input type="number" id="filtre-annee-debut" placeholder="1200" min="1000" max="2100" style="width:90px">
+						</label>
+						<label>à
+							<input type="number" id="filtre-annee-fin" placeholder="2026" min="1000" max="2100" style="width:90px">
+						</label>
+						<label>Dépôt d'archives
+							<select id="filtre-depot">
+								<option value="">Tous</option>
+							</select>
+						</label>
+						<label>Cote (recherche libre)
+							<input type="text" id="filtre-cote" placeholder="ex: 5 Mi 4" style="padding:0.38rem 0.55rem;font-family:Georgia,serif;
                           font-size:0.88rem;border:1px solid #2c1810;
                           border-radius:4px;background:#f5f0eb;width:130px">
-          </label>
-        </div>
-        <div class="filtre-checks" style="margin-top:0.6rem">
-          <label>
-            <input type="checkbox" id="filtre-avec-decoration">
-            Avec décoration mentionnée
-          </label>
-          <label>
-            <input type="checkbox" id="filtre-avec-contrat">
-            Avec contrat de mariage
-          </label>
-        </div>
-      </div>
+						</label>
+					</div>
+					<div class="filtre-checks" style="margin-top:0.6rem">
+						<label>
+							<input type="checkbox" id="filtre-avec-decoration">
+							Avec décoration mentionnée
+						</label>
+						<label>
+							<input type="checkbox" id="filtre-avec-contrat">
+							Avec contrat de mariage
+						</label>
+					</div>
+				</div>
 
-      <!-- Groupe 2 : Individu -->
-      <div class="filtre-groupe">
-        <div class="filtre-groupe-titre">👨‍👩‍👧‍👦 Individu</div>
-        <div class="filtre-ligne">
-          <label>Branche
-            <select id="filtre-branche">
-              <option value="">Toutes</option>
-            </select>
-          </label>
-          <label>Ligne
-            <select id="filtre-ligne">
-              <option value="">Toutes</option>
-              <option value="directe">Directe</option>
-              <option value="collateraux">Collatérale</option>
-              <option value="autre">Autre</option>
-            </select>
-          </label>
-          <label>Sexe
-            <select id="filtre-sexe">
-              <option value="">Tous</option>
-              <option value="M">Masculin ♂</option>
-              <option value="F">Féminin ♀</option>
-            </select>
-          </label>
-          <label>Profession
-            <select id="filtre-profession">
-              <option value="">Toutes</option>
-            </select>
-          </label>
-          <label>Type d'union
-            <select id="filtre-union">
-              <option value="">Tous</option>
-              <option value="mariage">Mariage</option>
-              <option value="union_libre">Union libre</option>
-              <option value="pacs">PACS</option>
-              <option value="divorce">Divorce</option>
-              <option value="separation">Séparation</option>
-            </select>
-          </label>
-        </div>
-        <div class="filtre-checks" style="margin-top:0.6rem">
-          <label>
-            <input type="checkbox" id="filtre-individu-decore">
-            Individu décoré
-          </label>
-        </div>
-      </div>
+				<!-- Groupe 2 : Individu -->
+				<div class="filtre-groupe">
+					<div class="filtre-groupe-titre">👨‍👩‍👧‍👦 Individu</div>
+					<div class="filtre-ligne">
+						<label>Branche
+							<select id="filtre-branche">
+								<option value="">Toutes</option>
+							</select>
+						</label>
+						<label>Ligne
+							<select id="filtre-ligne">
+								<option value="">Toutes</option>
+								<option value="directe">Directe</option>
+								<option value="collateraux">Collatérale</option>
+								<option value="autre">Autre</option>
+							</select>
+						</label>
+						<label>Sexe
+							<select id="filtre-sexe">
+								<option value="">Tous</option>
+								<option value="M">Masculin ♂</option>
+								<option value="F">Féminin ♀</option>
+							</select>
+						</label>
+						<label>Profession
+							<select id="filtre-profession">
+								<option value="">Toutes</option>
+							</select>
+						</label>
+						<label>Type d'union
+							<select id="filtre-union">
+								<option value="">Tous</option>
+								<option value="mariage">Mariage</option>
+								<option value="union_libre">Union libre</option>
+								<option value="pacs">PACS</option>
+								<option value="divorce">Divorce</option>
+								<option value="separation">Séparation</option>
+							</select>
+						</label>
+					</div>
+					<div class="filtre-checks" style="margin-top:0.6rem">
+						<label>
+							<input type="checkbox" id="filtre-individu-decore">
+							Individu décoré
+						</label>
+					</div>
+				</div>
 
-      <!-- Groupe 3 : Lieu -->
-      <div class="filtre-groupe">
-        <div class="filtre-groupe-titre">📍 Lieu</div>
-        <div class="filtre-ligne">
-          <label>Département
-            <select id="filtre-dept">
-              <option value="">Tous</option>
-            </select>
-          </label>
-          <label>Commune (recherche libre)
-            <input type="text" id="filtre-commune"
-                   placeholder="ex: Gonnord, Valanjou…"
-                   style="padding:0.38rem 0.55rem;font-family:Georgia,serif;
+				<!-- Groupe 3 : Lieu -->
+				<div class="filtre-groupe">
+					<div class="filtre-groupe-titre">📍 Lieu</div>
+					<div class="filtre-ligne">
+						<label>Département
+							<select id="filtre-dept">
+								<option value="">Tous</option>
+							</select>
+						</label>
+						<label>Commune (recherche libre)
+							<input type="text" id="filtre-commune" placeholder="ex: Gonnord, Valanjou…" style="padding:0.38rem 0.55rem;font-family:Georgia,serif;
                           font-size:0.88rem;border:1px solid #2c1810;
                           border-radius:4px;background:#f5f0eb;width:160px">
-          </label>
-        </div>
-      </div>
+						</label>
+					</div>
+				</div>
 
-      <div class="filtres-footer">
-        <button class="btn-reset" onclick="reinitialiser()">✕ Réinitialiser les filtres</button>
-      </div>
-    </div>
-  </div>
+				<div class="filtres-footer">
+					<button class="btn-reset" onclick="reinitialiser()">✕ Réinitialiser les filtres</button>
+				</div>
+			</div>
+		</div>
 
-  <!-- ── Pills filtres actifs ── -->
-  <div class="filtres-actifs" id="filtres-actifs"></div>
+		<!-- ── Pills filtres actifs ── -->
+		<div class="filtres-actifs" id="filtres-actifs"></div>
 
-  <!-- ── Onglets ── -->
-  <div class="onglets">
-    <div class="onglet actif" onclick="changerOnglet('tous', this)">
-      Tous <span id="count-tous"></span>
-    </div>
-    <div class="onglet" onclick="changerOnglet('actes', this)">
-      Actes <span id="count-actes"></span>
-    </div>
-    <div class="onglet" onclick="changerOnglet('individus', this)">
-      Individus <span id="count-individus"></span>
-    </div>
-    <div class="onglet" onclick="changerOnglet('maires', this)">
-      Maires / Officiers <span id="count-maires"></span>
-    </div>
-  </div>
+		<!-- ── Onglets ── -->
+		<div class="onglets">
+			<div class="onglet actif" onclick="changerOnglet('tous', this)">
+				Tous <span id="count-tous"></span>
+			</div>
+			<div class="onglet" onclick="changerOnglet('actes', this)">
+				Actes <span id="count-actes"></span>
+			</div>
+			<div class="onglet" onclick="changerOnglet('individus', this)">
+				Individus <span id="count-individus"></span>
+			</div>
+			<div class="onglet" onclick="changerOnglet('maires', this)">
+				Maires / Officiers <span id="count-maires"></span>
+			</div>
+		</div>
 
-  <!-- ── Barre résultats + tri ── -->
-  <div class="barre-resultats">
-    <div class="compteur" id="compteur"></div>
-    <select class="tri-select" id="filtre-tri" onchange="lancerRecherche()">
-      <option value="pertinence">Trier : Pertinence</option>
-      <option value="annee-asc">Année ↑</option>
-      <option value="annee-desc">Année ↓</option>
-      <option value="nom-asc">Nom A→Z</option>
-      <option value="nom-desc">Nom Z→A</option>
-    </select>
-  </div>
+		<!-- ── Barre résultats + tri ── -->
+		<div class="barre-resultats">
+			<div class="compteur" id="compteur"></div>
+			<select class="tri-select" id="filtre-tri" onchange="lancerRecherche()">
+				<option value="pertinence">Trier : Pertinence</option>
+				<option value="annee-asc">Année ↑</option>
+				<option value="annee-desc">Année ↓</option>
+				<option value="nom-asc">Nom A→Z</option>
+				<option value="nom-desc">Nom Z→A</option>
+			</select>
+		</div>
 
-  <!-- ── Résultats ── -->
-  <div class="resultats" id="resultats"></div>
+		<!-- ── Résultats ── -->
+		<div class="resultats" id="resultats"></div>
 
-</div>
+	</div>
 
-  <!-- Scripts -->
-  <script>
-    // Toggle filtres — monté IMMÉDIATEMENT avant recherche.js
-    // pour être disponible dès le rendu du DOM
-    function toggleFiltres() {
-      const header = document.getElementById('filtres-toggle');
-      const body   = document.getElementById('filtres-body');
-      if (!header || !body) {
-        console.warn('toggleFiltres : éléments introuvables');
-        return;
-      }
-      const estOuvert = body.classList.contains('ouvert');
-      body.classList.toggle('ouvert', !estOuvert);
-      header.classList.toggle('ouvert', !estOuvert);
-    }
-  </script>
-  <script src="js/recherche.js"></script>
+	<!-- Scripts -->
+	<script>
+		// Toggle filtres — monté IMMÉDIATEMENT avant recherche.js
+		// pour être disponible dès le rendu du DOM
+		function toggleFiltres() {
+			const header = document.getElementById('filtres-toggle');
+			const body = document.getElementById('filtres-body');
+			if (!header || !body) {
+				console.warn('toggleFiltres : éléments introuvables');
+				return;
+			}
+			const estOuvert = body.classList.contains('ouvert');
+			body.classList.toggle('ouvert', !estOuvert);
+			header.classList.toggle('ouvert', !estOuvert);
+		}
+	</script>
+	<script src="js/recherche.js"></script>
 </body>
+
 </html>

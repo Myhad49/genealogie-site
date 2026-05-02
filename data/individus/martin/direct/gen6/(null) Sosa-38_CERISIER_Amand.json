@@ -1,0 +1,150 @@
+{
+	"meta": {
+		"personne_id": "IND-Sosa_38",
+		"sosa": 38,
+		"personne_num": "38.2",
+		"branche": "martin",
+		"ligne": "direct",
+		"lignee": "paternelle",
+		"generation": 6,
+		"fichier_fiche": "fiches/individus/martin/direct/gen6/Sosa-38_CERISIER_Amand.html"
+	},
+	"bapteme": {
+		"acte_id": "AdB-Sosa_38",
+		"paroisse": {
+			"eglise": null,
+			"lieu": null,
+			"lieu_id": null,
+			"dept": null
+		},
+		"cure": {
+			"nom": null,
+			"prenom": null
+		},
+		"date_heure": {
+			"annee": null,
+			"mois": null,
+			"jour": null,
+			"heure": null,
+			"minute": null
+		},
+		"enfant": {
+			"nom_déclare": null,
+			"prenoms_declare": null,
+			"Date_naissance_declaree": {
+				"annee": null,
+				"mois": null,
+				"jour": null
+			}
+		},
+		"parents": {
+			"pere": {
+				"nom_mention": null,
+				"prenoms_mention": null
+			},
+			"mere": {
+				"nom_mention": null,
+				"prenoms_mention": null,
+				"epouse": true
+			}
+		},
+		"temoins": {
+			"parrain": {
+				"nom_mention": null,
+				"prenoms_mention": null,
+				"lien": null,
+				"paroisse_mention": {
+					"lieu": null,
+					"lieu_id": null,
+					"dept": null
+				}
+			},
+			"marraine": {
+				"nom_mention": null,
+				"prenoms_mention": null,
+				"lien": null,
+				"paroisse_mention": {
+					"lieu": null,
+					"lieu_id": null,
+					"dept": null
+				}
+			}
+		},
+		"signatures": {
+			"pere": {
+				"signe": null,
+				"signature_apposee": null,
+				"mention_ne_savoir_signer": null
+			},
+			"mere": {
+				"signe": null,
+				"signature_apposee": null,
+				"mention_ne_savoir_signer": null
+			},
+			"parrain": {
+				"signe": null,
+				"signature_apposee": null,
+				"mention_ne_savoir_signer": null
+			},
+			"marraine": {
+				"signe": null,
+				"signature_apposee": null,
+				"mention_ne_savoir_signer": null
+			}
+		}
+	},
+	"unions": {
+		"type": "mariage"
+	},
+	"deces": {
+		"date": "1868-01-09",
+		"date_estimee": null,
+		"age_acte": 57,
+		"age_calcule": null,
+		"lieu": {
+			"commune": "Ingrandes",
+			"departement": "Maine-et-Loire",
+			"code_insee": "49163",
+			"lieu_dit": "La Grillardière"
+		},
+		"acte": {
+			"fichier": "actes/martin/direct/gen6/Sosa-38_AdD_CERISIER_Amand.html",
+			"source": "AD49",
+			"cote": "5MI011_7",
+			"collection": "communale",
+			"fiable": true
+		}
+	},
+	"filiation": {
+		"pere": {
+			"nom": "CERISIER",
+			"prenom": null,
+			"sosa": null,
+			"fiche": null
+		},
+		"mere": {
+			"nom": null,
+			"prenom": null,
+			"sosa": null,
+			"fiche": null
+		}
+	},
+	"fratrie": [],
+	"residences": [
+		{
+			"commune": "Ingrandes",
+			"departement": "Maine-et-Loire",
+			"lieu_dit": "La Grillardière",
+			"periode": "1868",
+			"source": "acte de décès"
+		}
+	],
+	"tags": [
+		"cultivateur",
+		"Ingrandes",
+		"Maine-et-Loire",
+		"gen6",
+		"martin-direct",
+		"sosa-38"
+	]
+}

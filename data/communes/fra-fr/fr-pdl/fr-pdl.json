@@ -1,0 +1,23 @@
+{
+	"meta": {
+		"type": "region",
+		"departement": "fr-pdl",
+		"region_nom": "Pays de la Loire",
+		"url_fiche": "communes/fra-fr/fr-pdl/fr-pdl.html"
+	},
+	"fr-44": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-44/fr-44.json"
+	},
+	"fr-49": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-49/fr-49.json"
+	},
+	"fr-53": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-53/fr-53.json"
+	},
+	"fr-72": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-72/fr-72.json"
+	},
+	"fr-85": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-85/fr-85.json"
+	}
+}

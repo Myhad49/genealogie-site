@@ -21,89 +21,80 @@
       Généalogie&nbsp;
       <span class="letter-m">M</span><span class="letter-y">Y</span><span class="letter-h">H</span><span class="letter-a">A</span><span class="letter-d">D</span>
     </h1>
-    <p>Site personnel d’archives généalogiques et historiques — Archives publiques – compilation et mise en forme personnelles. Merci de citer la source</p>
+    <p>Site personnel d'archives généalogiques et historiques — Archives publiques – compilation et mise en forme personnelles. Merci de citer la source</p>
   </section>
 
   <!-- ═══════════════════ MAIN ═══════════════════ -->
   <main>
 
-    <!-- ── Branches MARTIN ── -->
+    <!-- ── Branche MARTIN ── -->
     <h2 class="section-title">🌳 Branche MARTIN</h2>
     <div class="cards-grid">
 
-      <a class="card card-martin-direct"
-         href="actes/martin/direct/gen1/">
+      <a class="card card-martin-direct" href="individus/martin/direct/gen2/">
         <span class="card-icon">📜</span>
         <h2>Direct — MARTIN</h2>
-        <p>Ligne directe de la branche MARTIN · Générations 1 à 7</p>
+        <p>Ligne directe de la branche MARTIN · Générations 2 à 7</p>
       </a>
 
-      <a class="card card-martin-coll"
-         href="actes/martin/collateraux/gen1/">
+      <a class="card card-martin-coll" href="individus/martin/collateraux/gen2/">
         <span class="card-icon">🌿</span>
         <h2>Collatéraux — MARTIN</h2>
-        <p>Branches collatérales de la branche MARTIN · Générations 1 à 7</p>
+        <p>Branches collatérales de la branche MARTIN · Générations 2 à 7</p>
       </a>
 
     </div>
 
-    <!-- ── Branches YVARD ── -->
+    <!-- ── Branche YVARD ── -->
     <h2 class="section-title">🌳 Branche YVARD</h2>
     <div class="cards-grid">
 
-      <a class="card card-yvard-direct"
-         href="actes/yvard/direct/gen1/">
+      <a class="card card-yvard-direct" href="individus/yvard/direct/gen2/">
         <span class="card-icon">📜</span>
         <h2>Direct — YVARD</h2>
-        <p>Ligne directe de la branche YVARD · Générations 1 à 7</p>
+        <p>Ligne directe de la branche YVARD · Générations 2 à 7</p>
       </a>
 
-      <a class="card card-yvard-coll"
-         href="actes/yvard/collateraux/gen1/">
+      <a class="card card-yvard-coll" href="individus/yvard/collateraux/gen2/">
         <span class="card-icon">🌿</span>
         <h2>Collatéraux — YVARD</h2>
-        <p>Branches collatérales de la branche YVARD · Générations 1 à 7</p>
+        <p>Branches collatérales de la branche YVARD · Générations 2 à 7</p>
       </a>
 
     </div>
 
-    <!-- ── Outils transversaux ── -->
+    <!-- ── Accès transversaux ── -->
     <h2 class="section-title">🗂️ Accès transversaux</h2>
     <div class="cards-grid">
 
-      <a class="card card-transversal"
-         href="actes/transversal/">
+      <a class="card card-transversal card-disabled" href="#" aria-disabled="true" title="À venir">
         <span class="card-icon">🗂️</span>
-        <h2>Classement transversal</h2>
-        <p>Tous les actes du site regroupés par type — Naissances, Mariages, Décès, Matricules…</p>
+        <h2>Classement transversal <span class="badge-soon">bientôt</span></h2>
+        <p>Tous les actes regroupés par type — Naissances, Mariages, Décès, Matricules…</p>
       </a>
 
-      <a class="card card-recherche"
-         href="recherche.html">
+      <a class="card card-recherche" href="recherche.html">
         <span class="card-icon">🔍</span>
         <h2>Recherche globale</h2>
-        <p>Filtrer l'ensemble des actes par nom, commune, type, génération, département…</p>
+        <p>Filtrer l'ensemble des individus et actes par nom, commune, type, génération…</p>
       </a>
 
-      <a class="card card-communes"
-         href="/communes/">
+      <a class="card card-communes" href="communes/">
         <span class="card-icon">🏘️</span>
         <h2>Communes</h2>
         <p>Fiches communes, historique des noms, cartes et repères géographiques</p>
       </a>
 
-      <a class="card card-personnes"
-         href="personnes/">
+      <a class="card card-personnes" href="individus/">
         <span class="card-icon">🎩</span>
-        <h2>Personnes &amp; Contexte</h2>
-        <p>Maires des actes, métiers anciens, personnages récurrents</p>
+        <h2>Individus</h2>
+        <p>Témoins, maires, officiers et personnages récurrents des actes</p>
       </a>
 
-      <a class="card card-outils"
-         href="outils/">
+      <a class="card card-outils" href="references/">
         <span class="card-icon">🖋️</span>
-        <h2>Outils</h2>
-        <p>Paléographie, règles de transcription, méthodes, calendriers, templates</p>
+        <h2>Références</h2>
+        <p>Paléographie, règles de transcription, méthodes, calendriers, professions</p>
       </a>
 
     </div>
@@ -112,21 +103,11 @@
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
   <footer>
-    © MYHAD – Contenu libre d’accès, merci de citer la source
+    © MYHAD – Contenu libre d'accès, merci de citer la source
   </footer>
 
   <!-- ═══════════════════ JS ═══════════════════ -->
   <script src="js/nav.js"></script>
-  <script>
-    /* ── Active nav sur la page courante ── */
-    document.addEventListener('DOMContentLoaded', () => {
-      const path = window.location.pathname.replace(/\/$/, '');
-      document.querySelectorAll('#nav-container a').forEach(a => {
-        const href = a.getAttribute('href')?.replace(/\/$/, '');
-        if (href && path.endsWith(href)) a.classList.add('active');
-      });
-    });
-  </script>
 
 </body>
 </html>

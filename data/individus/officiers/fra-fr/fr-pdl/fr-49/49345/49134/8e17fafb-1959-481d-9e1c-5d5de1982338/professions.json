@@ -1,0 +1,18 @@
+{
+  "profession_1": {
+    "uuid": "d03876dc-f9c1-4b78-b18a-24de505d87fc",
+    "date": {
+      "annee": 1825,
+      "mois": 2,
+      "jour": 1
+    },
+    "lieu_profession": {
+      "mention": "Faye",
+      "commune_id": 49134,
+      "departement": "fr-49"
+    },
+		"source": {
+			"acte_id": "AdN-77990266-ff63-44f8-bab6-9760e46e6db1"
+		}
+  }
+}

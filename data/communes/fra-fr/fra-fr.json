@@ -1,0 +1,14 @@
+{
+	"meta": {
+		"type": "pays",
+		"pays": "fra-fr",
+		"pays_nom": "France",
+		"url_fiche": "communes/fra-fr/fra-fr.html"
+	},
+	"fr-bre": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-bre.json"
+	},
+	"fr-pdl": {
+		"data": "data/communes/fra-fr/fr-pdl/fr-pdl.json"
+	}
+}

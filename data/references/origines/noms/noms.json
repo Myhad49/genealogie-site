@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "uuid": "noms",
+    "type": "referentiel_origines_noms",
+    "url_fiche": "references/origines/noms/noms.html"
+  },
+  "noms_c": {
+    "data": "data/references/origine/noms/c/9a92eab3-076e-447c-aa84-0cc13e718516.json"
+  }
+}

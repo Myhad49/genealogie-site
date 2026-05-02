@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "acte_id": "AdN-77990266-ff63-44f8-bab6-9760e46e6db1",
+		"acte_name": "AdN_CERISIER_Amant"
+  },
+  "annee_declaration": 1825,
+  "mois_declaration": 2,
+  "jour_declaration": 1,
+  "heure_declaration": 15,
+  "minute_declaration": 0,
+  "lieu_declaration": {
+    "mention": "Faye",
+    "commune_id": 49134,
+    "canton": "Thouarcé",
+    "arrondissement": "Angers",
+    "departement": "fr-49",
+    "pays": "fra-fr"
+  },
+  "source": {
+    "depot": "Archives départementales du Maine-et-Loire (49)",
+    "commune": "Faye-d'Anjou",
+    "registre": "Naissances, Mariage, Décès",
+    "periode": [
+      1819,
+      1830
+    ],
+    "pages": 147,
+    "vue": [
+      81
+    ],
+    "acte_numero": "3",
+    "collection": "Départementale",
+    "cote_1": "5 Mi 0499",
+    "cote_2": "6E134/12"
+  },
+  "enfant": {
+    "nom_déclare": "CERISIER",
+    "prenoms_declare": [
+      "Amant"
+    ],
+    "Date_heure_naissance": {
+      "annee": 1925,
+      "mois": 1,
+      "jour": 31,
+      "heure": 10,
+      "minute": 0,
+      "approximation": false,
+      "commentaire": null
+    },
+    "lieu_naissance": {
+      "domicile_parent": false,
+      "adresse": null,
+      "affiche": "Faye",
+      "commune_id": 49134,
+      "departement": "fr-49",
+      "approximation": false,
+      "commentaire": null
+    }
+  },
+  "parents": {
+    "pere": {
+      "uuid": "1e65f75c-7c32-4290-bc70-863281c567a7",
+      "declarant": true,
+      "nom_mention": "CERISIER",
+      "prenoms_mention": [
+        "Noël-Jean"
+      ],
+      "age": 28,
+      "date_naissance_mention": {
+        "annee": null,
+        "mois": null,
+        "jour": null
+      },
+      "annee_naissance_estimee": 1797,
+      "lieu_naissance": {
+        "mention": "Faye",
+        "commune_id": 49134,
+        "departement": "fr-49"
+      },
+      "profession": {
+        "uuid": "3f2d9632-9f29-4aa9-85ba-51892c0ed8a7"
+      },
+      "lieu_domicile": {
+        "adresse": null,
+        "mention": "Faye",
+        "commune_id": 49134,
+        "departement": "fr-49"
+      },
+      "approximation": false,
+      "commentaire": null
+    },
+    "mere": {
+      "uuid": "33cb8448-678b-4db5-a25a-90b2167cb989",
+      "declarant": false,
+      "nom_mention": "AMANT",
+      "prenoms_mention": [
+        "Louise"
+      ],
+      "age": null,
+      "date_naissance_mention": {
+        "annee": null,
+        "mois": null,
+        "jour": null
+      },
+      "annee_naissance_estimee": null,
+      "lieu_naissance": {
+        "mention": null,
+        "commune_id": null,
+        "departement": null
+      },
+      "profession": {
+        "uuid": "3f2d9632-9f29-4aa9-85ba-51892c0ed8a7"
+      },
+      "lieu_domicile": {
+        "adresse": null,
+        "mention": "Faye",
+        "commune_id": 49134,
+        "departement": "fr-49"
+      },
+      "epouse": true,
+      "approximation": false,
+      "commentaire": null
+    }
+  },
+  "declarant": {
+    "personne_id": null,
+    "nom_mention": null,
+    "prenoms_mention": null,
+    "age": null,
+    "date_naissance_mention": {
+      "annee": null,
+      "mois": null,
+      "jour": null
+    },
+    "annee_naissance_estimee": null,
+    "lieu_naissance": {
+      "mention": null,
+      "commune_id": null,
+      "departement": null
+    },
+    "profession": null,
+    "lieu_domicile": {
+      "adresse": null,
+      "mention": null,
+      "commune_id": null,
+      "departement": null
+    }
+  },
+  "temoin": {
+    "premier": {
+      "uuid": "4ea8a577-511a-4fdc-8a3c-dc572412692b",
+      "declarant": false,
+      "nom_mention": "CERISIER",
+      "prenoms_mention": [
+        "Auguste"
+      ],
+      "age": 26,
+      "annee_naissance_estimee": 1799,
+      "profession": {
+        "uuid": "3f2d9632-9f29-4aa9-85ba-51892c0ed8a7"
+      },
+      "lieu_domicile": {
+        "adresse": null,
+        "mention": "Faye",
+        "commune_id": 49134,
+        "departement": "fr-49"
+      },
+      "lien": "Oncle paternel de l'enfant"
+    },
+    "second": {
+      "uuid": "6ff173c5-fc15-4eff-97c6-c16ad53c8f14",
+      "declarant": false,
+      "nom_mention": "DUBIJON",
+      "prenoms_mention": [
+        "Noël"
+      ],
+      "age": 68,
+      "annee_naissance_estimee": 1757,
+      "profession": "marchand",
+      "lieu_domicile": {
+        "adresse": null,
+        "mention": "Faye",
+        "commune_id": 49134,
+        "departement": "fr-49"
+      },
+      "lien": null
+    }
+  },
+  "redacteur": {
+    "uuid": "8e17fafb-1959-481d-9e1c-5d5de1982338",
+    "nom_mention": "TIJOU",
+    "prenoms_mention": null,
+    "fonction_mention": "Officier de l'état civil"
+  },
+  "signatures": {
+    "pere": {
+      "signe": true,
+      "signature_apposee": "N. Cerisier",
+      "mention_ne_savoir_signer": false
+    },
+    "mere": {
+      "signe": false,
+      "signature_apposee": null,
+      "mention_ne_savoir_signer": null
+    },
+    "temoin_1": {
+      "signe": true,
+      "signature_apposee": "A. Cerisier",
+      "mention_ne_savoir_signer": null
+    },
+    "temoin_2": {
+      "signe": false,
+      "signature_apposee": null,
+      "mention_ne_savoir_signer": true
+    }
+  }
+}

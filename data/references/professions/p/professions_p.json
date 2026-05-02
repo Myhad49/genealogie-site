@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "uuid": "professions_p",
+		"type": "index_alphabetique_professions_p",
+    "url_fiche": "references/professions/p/professions_p.html"
+  },
+  "3f2d9632-9f29-4aa9-85ba-51892c0ed8a7": {
+    "data": "data/references/professions/p/3f2d9632-9f29-4aa9-85ba-51892c0ed8a7.json"
+  }
+}

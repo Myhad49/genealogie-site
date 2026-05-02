@@ -149,6 +149,28 @@
     border-top-color: #2b1d0e;
 }
 
+/* ── Carte désactivée (coming soon) ── */
+.card-disabled {
+  opacity: .55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── Badge "bientôt" ── */
+.badge-soon {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: bold;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  background: var(--parch-mid);
+  color: #fff;
+  border-radius: 8px;
+  padding: 1px 7px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
 /* ══════════════════════════════════════════
        FOOTER
     ══════════════════════════════════════════ */
